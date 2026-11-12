@@ -1,0 +1,10 @@
+node_modules/
+.next/
+out/
+
+# Local environment values (the safe template stays tracked)
+.env*
+!.env.example
+
+# Debug logs
+npm-debug.log*
