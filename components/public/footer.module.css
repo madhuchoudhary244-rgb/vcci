@@ -1,0 +1,15 @@
+.footer { color: #dce1ea; background: var(--color-secondary); }
+.inner, .bottom { width: min(100% - (var(--page-gutter) * 2), var(--container-width)); margin: auto; }
+.inner { display: grid; grid-template-columns: 1.45fr .7fr 1fr; gap: 3rem; padding: 4.5rem 0 3rem; }
+.mark { margin-bottom: .75rem; color: #fff; font-weight: 800; letter-spacing: .18em; }
+.brand { display: flex; gap: 1rem; align-items: flex-start; }.logo { flex: 0 0 auto; width: 4.4rem; height: 4.4rem; object-fit: contain; }.brand h2 { max-width: 19rem; margin: 0; color: #fff; font-size: 1.25rem; line-height: 1.25; }
+.brand > p:last-child { margin-top: 1rem; color: #aeb7c5; }
+.footer h3 { margin: 0 0 1rem; color: #fff; font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; }
+.footer nav, .footer address { display: grid; gap: .65rem; font-style: normal; }
+.footer a { color: #c5cdd9; font-size: .92rem; text-decoration: none; }
+.footer a:hover, .footer a:focus-visible { color: #fff; }
+.footer .mapsLink { width: fit-content; margin-top: .35rem; color: #fff; font-weight: 700; }
+.footer address p { margin: .4rem 0 0; color: #aeb7c5; }
+.bottom { display: flex; gap: 1rem; padding: 1.25rem 0; border-top: 1px solid rgb(255 255 255 / 14%); color: #98a3b4; font-size: .78rem; }
+.bottom p { margin: 0 auto 0 0; }
+@media (max-width: 700px) { .inner { grid-template-columns: 1fr; gap: 2rem; padding: 3.5rem 0 2.5rem; } .bottom { flex-wrap: wrap; } .bottom p { width: 100%; } .logo { width: 3.7rem; height: 3.7rem; } }

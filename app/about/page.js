@@ -1,0 +1,13 @@
+import PageIntro from '../../components/public/PageIntro';
+import PublicPage from '../../components/public/PublicPage';
+import styles from '../../components/public/public-page.module.css';
+
+export const metadata = { title: 'About VCCI | Vision Computer & Coaching Institute', description: 'Learn about VCCI’s approach to practical computer education and skill development in Ludhiana.' };
+
+export default function AboutPage() {
+  return <PublicPage><main><PageIntro eyebrow="About VCCI" title="A learning environment built around practical skills." text="Vision Computer & Coaching Institute supports students as they build confidence with computer education and technology learning." />
+    <section className={styles.page}><div className={styles.container}><div className={styles.twoColumn}><div className={styles.sectionTitle}><p>Our approach</p><h2>Clear learning, useful skills, focused support.</h2></div><div><p>VCCI is designed for students who want a professional place to learn computer skills. The institute brings together computer education, practical learning, and a student-focused approach.</p><p>Learning is presented with clarity so students can build a foundation they can use as they continue their education and skill development.</p></div></div></div></section>
+    <section className={styles.pageAlt}><div className={styles.container}><div className={styles.sectionTitle}><p>What guides the institute</p><h2>Learning with purpose.</h2></div><div className={styles.highlightGrid}><article><h3>Institute mission</h3><p>Support students in developing computer knowledge and practical technology skills.</p></article><article><h3>Training approach</h3><p>Keep learning understandable, focused, and connected to real computer use.</p></article><article><h3>Skill-development focus</h3><p>Offer course options that help learners explore foundational and specialised subjects.</p></article><article><h3>Learning environment</h3><p>Provide a place where students can ask, practise, and continue building confidence.</p></article></div></div></section>
+    <section className={styles.page}><div className={styles.container}><div className={styles.twoColumn}><div className={styles.sectionTitle}><p>Practical computer education</p><h2>Technology learning for the next step.</h2></div><div><p>From computer foundations and office skills to design, programming, and technology subjects, the VCCI course catalogue is structured to give learners several paths to explore.</p><p>Course-specific information can be requested directly from the institute.</p></div></div></div></section>
+  </main></PublicPage>;
+}
